@@ -3,6 +3,7 @@
 
 #include <string>
 #include <vector>
+#include "CipherMode.hpp"
 
 struct ProgramSettings {
     bool help;
@@ -10,7 +11,7 @@ struct ProgramSettings {
     std::string inputName;
     std::string outputName;
     std::string cipherKey;
-    bool encrypt;
+    CipherMode mode;
 };
 
 bool processCommandLine(const std::vector<std::string>& args,
